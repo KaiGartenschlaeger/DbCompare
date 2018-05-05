@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleConfiguration</name>
+    </assembly>
+    <members>
+        <member name="M:SimpleConfiguration.ConfigObject.ToString">
+            <summary>
+            Liefert eine Zeichenfolge, die das aktuelle Objekt bezeichnet.
+            </summary>
+        </member>
+        <member name="T:SimpleConfiguration.ConfigGroup">
+            <summary>
+            Stellt eine Gruppe mit Konfigurationswerten dar.
+            </summary>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.#ctor(System.String)">
+            <summary>
+            Stellt eine Gruppe mit Konfigurationswerten dar.
+            </summary>
+            <param name="name">Name der Gruppe.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Load(System.String,SimpleConfiguration.ConfigFormat)">
+            <summary>
+            Lädt die Gruppe.
+            </summary>
+            <param name="path">Dateipfad der Datei, die geladen werden soll.</param>
+            <param name="format">Dateiformat der Datei die gelesen werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Load(System.String,SimpleConfiguration.ConfigFormat,System.Boolean)">
+            <summary>
+            Lädt die Gruppe.
+            </summary>
+            <param name="path">Dateipfad der Datei, die geladen werden soll.</param>
+            <param name="format">Dateiformat der Datei die gelesen werden soll.</param>
+            <param name="autoCreate">Falls die Datei nicht exisitert, wird eine leere Gruppe erstellt.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Load(System.String,SimpleConfiguration.IConfigReader)">
+            <summary>
+            Lädt die Gruppe.
+            </summary>
+            <param name="path">Dateipfad der Datei, die geladen werden soll.</param>
+            <param name="reader">IConfigReader-Implementierung die zum lesen verwendet werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Save(System.String,SimpleConfiguration.ConfigFormat)">
+            <summary>
+            Speichert die Gruppe.
+            </summary>
+            <param name="path">Dateipfad unter dem gespeichert werden soll.</param>
+            <param name="format">Dateiformat das zum schreiben verwendet werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Save(System.String,SimpleConfiguration.IConfigWriter)">
+            <summary>
+            Speichert die Gruppe.
+            </summary>
+            <param name="path">Dateipfad unter dem gespeichert werden soll.</param>
+            <param name="writer">IConfigWriter-Implementierung die zum schreiben verwendet werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Create(System.String)">
+            <summary>
+            Erstellt eine neue Gruppe.
+            </summary>
+            <param name="name">Name der Gruppe, die erstellt werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.SetGroup(System.String)">
+            <summary>
+            Liefert die Gruppe mit dem angegebenen Name oder erstellt eine neue, falls die Gruppe nicht existiert.
+            </summary>
+            <param name="name">Name der Gruppe, zu der gewechselt werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.Boolean)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.Byte)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.SByte)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.Int16)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.UInt16)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.UInt32)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.Int32)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.Int64)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.UInt64)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.Single)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.Double)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.Decimal)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.Write(System.String,System.String)">
+            <summary>
+            Schreibt einen Wert in die Gruppe.
+            Falls der Wert schon existiert, wird er überschrieben.
+            </summary>
+            <param name="name">Name des Wertes, der geschrieben werden soll.</param>
+            <param name="value">Wert der geschrieben werden soll.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadBool(System.String,System.Boolean)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadByte(System.String,System.Byte)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadSByte(System.String,System.SByte)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadInt16(System.String,System.Int16)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadUInt16(System.String,System.UInt16)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadInt32(System.String,System.Int32)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadUInt32(System.String,System.UInt32)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadInt64(System.String,System.Int64)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadUInt64(System.String,System.UInt64)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadFloat(System.String,System.Single)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadFloat(System.String,System.Double)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadDecimal(System.String,System.Decimal)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="M:SimpleConfiguration.ConfigGroup.ReadString(System.String,System.String)">
+            <summary>
+            Versucht einen Wert aus der Gruppe zu lesen.
+            Falls der Wert nicht existiert oder einen ungültigen Wert enthält, wird der alternative Wert zurückgegeben.
+            </summary>
+            <param name="name">Name des Wertes der gelesen werden soll.</param>
+            <param name="fallbackValue">Alternativer Wert der zurückgegeben wird, wenn der Wert nicht gefunden werden kann oder nicht lesbar ist.</param>
+        </member>
+        <member name="P:SimpleConfiguration.ConfigGroup.Values">
+            <summary>
+            Enthält die Werte der Gruppe.
+            </summary>
+        </member>
+        <member name="P:SimpleConfiguration.ConfigGroup.Groups">
+            <summary>
+            Enthält die Untergruppen der Gruppe.
+            </summary>
+        </member>
+        <member name="P:SimpleConfiguration.ConfigGroup.ParentGroup">
+            <summary>
+            Enthält die übergeordnete Gruppe.
+            </summary>
+        </member>
+    </members>
+</doc>
